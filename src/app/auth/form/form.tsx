@@ -93,6 +93,7 @@ function Form() {
       firebase.auth().createUserWithEmailAndPassword(values.email, values.password)
         .then((response) => {
           console.log(response);
+          AuthService.setAuth(response.user);
         })
         .catch((error) => {
           console.log(error);
@@ -189,7 +190,7 @@ function Form() {
               );
             }}
           </Formik>
-          {showLogin && <jsd-button tertiary label='Forgot you password?'></jsd-button>}
+          {showLogin && <jsd-button btn-style='tertiary' label='Forgot you password?'></jsd-button>}
         </div>
       </AnimateList>
     </div>

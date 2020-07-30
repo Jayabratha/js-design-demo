@@ -11,14 +11,14 @@ import { User } from 'firebase';
 import { Subscription } from 'rxjs';
 
 const firebaseConfig = {
-  apiKey: 'AIzaSyCvOl89ZyF5e8PLY1taIB26z9XxBJ2lY4I',
-  authDomain: 'frontend-app-41dcf.firebaseapp.com',
-  databaseURL: 'https://frontend-app-41dcf.firebaseio.com',
-  projectId: 'frontend-app-41dcf',
-  storageBucket: '',
-  messagingSenderId: '618980611373',
-  appId: '1:618980611373:web:aefa75ff5cfd5c20596fa4',
-  measurementId: 'G-JRCKQJW2B5',
+  apiKey: "AIzaSyCjF7fglP-ginVpANzcqnO9JH1becWRsGw",
+  authDomain: "js-design-demo.firebaseapp.com",
+  databaseURL: "https://js-design-demo.firebaseio.com",
+  projectId: "js-design-demo",
+  storageBucket: "js-design-demo.appspot.com",
+  messagingSenderId: "1017411908622",
+  appId: "1:1017411908622:web:798af4887d9507ebf6785f",
+  measurementId: "G-2VNFYGM1XZ"
 };
 
 firebase.initializeApp(firebaseConfig);

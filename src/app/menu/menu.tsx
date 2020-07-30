@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import * as firebase from 'firebase/app';
 import AnimateList from '../components/list/list';
+import '@jsdesign/jsd-button';
 
 import './menu.scss';
 import { AuthService } from '../auth/auth.service';
@@ -63,9 +64,9 @@ function Menu() {
           <div key='second' className='footer-content list-item'>
             {user &&
               <div className='logout'>
-                <div>Privacy Policy</div>
-                <div>Settings</div>
-                <div onClick={logOut}>Logout</div>
+                <jsd-button btn-style='tertiary' label='Privacy Policy'></jsd-button>
+                <jsd-button btn-style='tertiary' label='Settings'></jsd-button>
+                <jsd-button btn-style='tertiary' label='Logout' onClick={logOut}></jsd-button>
               </div>
             }
             <div> Designed and Developed with <span className='heart'>&hearts;</span> by</div>
