@@ -68,8 +68,8 @@ function Menu() {
                 <div onClick={logOut}>Logout</div>
               </div>
             }
-            <div>Developed and Designed with <span className='heart'>&hearts;</span> by</div>
-            <div><a href='https://jayabratha.com'>Jayabratha</a> &amp; Venky</div>
+            <div> Designed and Developed with <span className='heart'>&hearts;</span> by</div>
+            <div><a href='https://jayabratha.com'>Jayabratha</a></div>
           </div>
         </AnimateList>
       </div>

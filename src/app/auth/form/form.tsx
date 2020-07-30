@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import GoogleLogo from '../../../assets/images/google.svg';
+import GithubLogo from '../../../assets/images/github.svg';
 import LinkedinLogo from '../../../assets/images/linkedin.png';
 import { HeaderService } from '../../header/header.service';
 import { Formik, FormikValues, FormikActions } from 'formik';
@@ -119,10 +120,13 @@ function Form() {
       <AnimateList animate='true' interval='300' delay='200' disable={showLogin || showSignUp}>
         <div key='first'
           className={`signin-option-wrapper flex form-item list-item ${(showLogin || showSignUp) ? 'hide' : ''}`}>
-          <jsd-button btn-style='secondary' icon='true' label='Google' full-width='true' onClick={signInWithGoogle}>
+          <jsd-button btn-style='secondary' icon='true' full-width='true' onClick={signInWithGoogle}>
             <img slot='icon' className='btn-icon' alt='Google logo' src={GoogleLogo} />
           </jsd-button>
-          <jsd-button btn-style='secondary' icon='true' full-width='true' label='Linkedin'>
+          <jsd-button btn-style='secondary' icon='true' full-width='true'>
+            <img slot='icon' className='btn-icon' alt='Github logo' src={GithubLogo} />
+          </jsd-button>
+          <jsd-button btn-style='secondary' icon='true' full-width='true'>
             <img slot='icon' className='btn-icon' alt='Linkedin logo' src={LinkedinLogo} />
           </jsd-button>
         </div>
@@ -178,7 +182,7 @@ function Form() {
                       full-width='true'
                       error-msg={formik.errors.confirmPassword}
                     ></jsd-input>}
-                  <div style={{paddingTop: '15px'}}>
+                  <div style={{ paddingTop: '15px' }}>
                     <jsd-button formId='authform' type='submit' full-width='true' label={submitText}></jsd-button>
                   </div>
                 </form>
