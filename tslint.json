@@ -1,0 +1,110 @@
+{
+    "defaultSeverity": "error",
+    "extends": [
+        "tslint:recommended"
+    ],
+    "linterOptions": {
+        "exclude": [
+            "bin",
+            "lib/*generated.js",
+            "src/serviceWorker.ts",
+            "src/App.test.tsx"
+        ]
+    },
+    "jsRules": {},
+    "rules": {
+        "quotemark": [
+            true,
+            "single",
+            "avoid-escape",
+            "avoid-template"
+        ],
+        "object-literal-sort-keys": false,
+        "interface-name": false,
+        "member-access": [
+            true,
+            "no-public"
+        ],
+        "ordered-imports": false,
+        "no-console": false,
+        "object-shorthand": [
+            "error",
+            "always"
+        ],
+        "quote-props": [
+            "error",
+            "as-needed"
+        ],
+        "prefer-destructuring": [
+            "error",
+            {
+                "array": true,
+                "object": true
+            },
+            {
+                "enforceForRenamedProperties": false
+            }
+        ],
+        "prefer-template": "error",
+        "template-curly-spacing": [
+            "error",
+            "never"
+        ],
+        "wrap-iife": [
+            "error",
+            "outside"
+        ],
+        "no-loop-func": "error",
+        "prefer-arrow-callback": "error",
+        "arrow-spacing": "error",
+        "arrow-parens": [
+            "error",
+            "always"
+        ],
+        "no-dupe-class-members": "error",
+        "no-duplicate-imports": [
+            "error",
+            {
+                "includeExports": true
+            }
+        ],
+        "indent": [true, "spaces", 1],
+        "no-iterator": "error",
+        "no-multi-assign": "error",
+        "no-plusplus": "error",
+        "no-case-declarations": "error",
+        "no-namespace": false,
+        "no-nested-ternary": "error",
+        "no-mixed-operators": "error",
+        "padded-blocks": [
+            "error",
+            "always"
+        ],
+        "no-multiple-empty-lines": "error",
+        "id-length": "error",
+        "jsx-a11y/alt-text": [
+            2,
+            {
+                "elements": [
+                    "img",
+                    "object",
+                    "area",
+                    "input[type=\"image\"]"
+                ],
+                "img": [
+                    "Image"
+                ],
+                "object": [
+                    "Object"
+                ],
+                "area": [
+                    "Area"
+                ],
+                "input[type=\"image\"]": [
+                    "InputImage"
+                ]
+            }
+        ]
+    },
+    "rulesDirectory": []
+}

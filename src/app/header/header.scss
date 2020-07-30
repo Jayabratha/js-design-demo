@@ -1,0 +1,19 @@
+.primary-header {
+  .header-content {
+    padding: 40px 0 100px;
+    .logo-wrapper {
+      height: 40px;
+      width: 40px;
+      border-radius: 50%;
+      background: var(--color-label);
+    }
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .primary-header {
+    .header-content {
+      padding: 40px 0 60px;
+    }
+  }
+}
